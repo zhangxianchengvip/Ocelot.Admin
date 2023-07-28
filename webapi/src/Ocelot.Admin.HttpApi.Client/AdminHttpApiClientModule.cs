@@ -1,23 +1,10 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using Volo.Abp.Account;
-using Volo.Abp.FeatureManagement;
-using Volo.Abp.Identity;
-using Volo.Abp.Modularity;
-using Volo.Abp.PermissionManagement;
-using Volo.Abp.TenantManagement;
-using Volo.Abp.SettingManagement;
+﻿using Volo.Abp.Modularity;
 using Volo.Abp.VirtualFileSystem;
 
 namespace Ocelot.Admin;
 
 [DependsOn(
-    typeof(AdminApplicationContractsModule),
-    typeof(AbpAccountHttpApiClientModule),
-    typeof(AbpIdentityHttpApiClientModule),
-    typeof(AbpPermissionManagementHttpApiClientModule),
-    typeof(AbpTenantManagementHttpApiClientModule),
-    typeof(AbpFeatureManagementHttpApiClientModule),
-    typeof(AbpSettingManagementHttpApiClientModule)
+    typeof(AdminApplicationContractsModule)
 )]
 public class AdminHttpApiClientModule : AbpModule
 {
@@ -25,14 +12,6 @@ public class AdminHttpApiClientModule : AbpModule
 
     public override void ConfigureServices(ServiceConfigurationContext context)
     {
-        context.Services.AddHttpClientProxies(
-            typeof(AdminApplicationContractsModule).Assembly,
-            RemoteServiceName
-        );
-
-        Configure<AbpVirtualFileSystemOptions>(options =>
-        {
-            options.FileSets.AddEmbedded<AdminHttpApiClientModule>();
-        });
+        Configure<AbpVirtualFileSystemOptions>(options => { options.FileSets.AddEmbedded<AdminHttpApiClientModule>(); });
     }
 }

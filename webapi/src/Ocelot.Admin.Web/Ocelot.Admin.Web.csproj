@@ -36,20 +36,18 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Volo.Abp.AspNetCore.Mvc.UI.Theme.LeptonXLite" Version="1.0.0" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Ocelot.Admin.Application\Ocelot.Admin.Application.csproj" />
     <ProjectReference Include="..\Ocelot.Admin.HttpApi\Ocelot.Admin.HttpApi.csproj" />
     <ProjectReference Include="..\Ocelot.Admin.EntityFrameworkCore\Ocelot.Admin.EntityFrameworkCore.csproj" />
     <PackageReference Include="Volo.Abp.Autofac" Version="6.0.3" />
     <PackageReference Include="Volo.Abp.Swashbuckle" Version="6.0.3" />
     <PackageReference Include="Volo.Abp.AspNetCore.Serilog" Version="6.0.3" />
-    <PackageReference Include="Volo.Abp.Identity.Web" Version="6.0.3" />
-    <PackageReference Include="Volo.Abp.Account.Web.OpenIddict" Version="6.0.3" />
-    <PackageReference Include="Volo.Abp.TenantManagement.Web" Version="6.0.3" />
-    <PackageReference Include="Volo.Abp.SettingManagement.Web" Version="6.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Pages\Index.cshtml" />
+    <_ContentIncludedByDefault Remove="Pages\_ViewImports.cshtml" />
+    <_ContentIncludedByDefault Remove="Components\_ViewImports.cshtml" />
   </ItemGroup>
 
 </Project>

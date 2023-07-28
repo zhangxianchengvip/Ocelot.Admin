@@ -7,7 +7,6 @@ using Microsoft.AspNetCore.Mvc.ApplicationParts;
 using Microsoft.Extensions.DependencyInjection;
 using Ocelot.Admin.Localization;
 using Ocelot.Admin.Web;
-using Ocelot.Admin.Web.Menus;
 using Volo.Abp.AspNetCore.TestBase;
 using Volo.Abp.Localization;
 using Volo.Abp.Modularity;
@@ -62,7 +61,7 @@ public class AdminWebTestModule : AbpModule
     {
         services.Configure<AbpNavigationOptions>(options =>
         {
-            options.MenuContributors.Add(new AdminMenuContributor());
+           // options.MenuContributors.Add(new AdminMenuContributor());
         });
     }
 }

@@ -8,17 +8,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Ocelot.Admin.Domain\Ocelot.Admin.Domain.csproj" />
-    <ProjectReference Include="..\Ocelot.Admin.Application.Contracts\Ocelot.Admin.Application.Contracts.csproj" />
+    <PackageReference Include="Volo.Abp.AutoMapper" Version="6.0.3" />
+    <PackageReference Include="Volo.Abp.Ddd.Application" Version="6.0.3" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Volo.Abp.Account.Application" Version="6.0.3" />
-    <PackageReference Include="Volo.Abp.Identity.Application" Version="6.0.3" />
-    <PackageReference Include="Volo.Abp.PermissionManagement.Application" Version="6.0.3" />
-    <PackageReference Include="Volo.Abp.TenantManagement.Application" Version="6.0.3" />
-    <PackageReference Include="Volo.Abp.FeatureManagement.Application" Version="6.0.3" />
-    <PackageReference Include="Volo.Abp.SettingManagement.Application" Version="6.0.3" />
+    <ProjectReference Include="..\Ocelot.Admin.Domain\Ocelot.Admin.Domain.csproj" />
+    <ProjectReference Include="..\Ocelot.Admin.Application.Contracts\Ocelot.Admin.Application.Contracts.csproj" />
   </ItemGroup>
 
 </Project>
