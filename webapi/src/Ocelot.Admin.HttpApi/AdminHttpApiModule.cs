@@ -1,41 +1,19 @@
-﻿using Localization.Resources.AbpUi;
-using Ocelot.Admin.Localization;
-using Volo.Abp.Account;
-using Volo.Abp.FeatureManagement;
-using Volo.Abp.Identity;
+﻿using Ocelot.Admin.Localization;
 using Volo.Abp.Localization;
 using Volo.Abp.Modularity;
-using Volo.Abp.PermissionManagement.HttpApi;
-using Volo.Abp.SettingManagement;
-using Volo.Abp.TenantManagement;
 
 namespace Ocelot.Admin;
 
 [DependsOn(
-    typeof(AdminApplicationContractsModule),
-    typeof(AbpAccountHttpApiModule),
-    typeof(AbpIdentityHttpApiModule),
-    typeof(AbpPermissionManagementHttpApiModule),
-    typeof(AbpTenantManagementHttpApiModule),
-    typeof(AbpFeatureManagementHttpApiModule),
-    typeof(AbpSettingManagementHttpApiModule)
+    typeof(AdminApplicationContractsModule)
+
     )]
 public class AdminHttpApiModule : AbpModule
 {
     public override void ConfigureServices(ServiceConfigurationContext context)
     {
-        ConfigureLocalization();
+
     }
 
-    private void ConfigureLocalization()
-    {
-        Configure<AbpLocalizationOptions>(options =>
-        {
-            options.Resources
-                .Get<AdminResource>()
-                .AddBaseTypes(
-                    typeof(AbpUiResource)
-                );
-        });
-    }
+
 }
