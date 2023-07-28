@@ -8,7 +8,7 @@ public class NameSpaceEntityTypeConfiguration : IEntityTypeConfiguration<NameSpa
 {
     public void Configure(EntityTypeBuilder<NameSpace> builder)
     {
-        builder.ToTable($"{AdminServiceDbProperties.DbTablePrefix}{nameof(NameSpace)}");
+        builder.ToTable($"{AdminConsts.DbTablePrefix}{nameof(NameSpace)}");
         builder.HasKey(n => n.Id);
         builder.HasIndex(r => r.NId).IsUnique();
     }

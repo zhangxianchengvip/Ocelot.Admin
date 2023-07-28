@@ -1,8 +1,12 @@
-﻿namespace Ocelot.Admin;
-
-public static class AdminConsts
+﻿namespace Ocelot.Admin
 {
-    public const string DbTablePrefix = "App";
+    public static class AdminConsts
+    {
+        public static string DbTablePrefix { get; set; } = "T_";
+        public static string DbTableSuffix { get; set; } = "";
 
-    public const string DbSchema = null;
+        public static string DbSchema { get; set; } = "";
+
+        public const string ConnectionStringName = "Default";
+    }
 }

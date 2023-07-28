@@ -7,7 +7,7 @@ using Volo.Abp.EntityFrameworkCore;
 
 namespace Ocelot.Admin.EntityFrameworkCore;
 
-[ConnectionStringName(AdminServiceDbProperties.ConnectionStringName)]
+[ConnectionStringName(AdminConsts.ConnectionStringName)]
 public class AdminDbContext : AbpDbContext<AdminDbContext>
 {
     public DbSet<NameSpace> NameSpaces { get; set; }
