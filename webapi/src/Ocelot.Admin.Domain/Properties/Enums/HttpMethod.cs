@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ocelot.Admin.Entity.Configurations.Routes.Upstreams;
+namespace Ocelot.Admin.Properties.Enums;
 public class HttpMethod : SmartEnum<HttpMethod>
 {
     public static readonly HttpMethod GET = new HttpMethod(nameof(GET), 1);
