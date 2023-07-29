@@ -8,6 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Volo.Abp.AspNetCore.Mvc" Version="6.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Ocelot.Admin.Application.Contracts\Ocelot.Admin.Application.Contracts.csproj" />
   </ItemGroup>
 

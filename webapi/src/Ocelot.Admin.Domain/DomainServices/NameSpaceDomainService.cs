@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Threading;
 using System.Threading.Tasks;
+using Ocelot.Admin.Entity.Configurations.Routes;
 using Ocelot.Admin.Entity.NameSpaces;
 using Volo.Abp;
 using Volo.Abp.Domain.Repositories;
@@ -10,13 +12,14 @@ namespace Ocelot.Admin.DomainServices;
 public class NameSpaceDomainService : DomainService
 {
     private readonly IRepository<NameSpace, Guid> _repository;
+    private readonly IRepository<Route, Guid> _routeRepository;
 
     public NameSpaceDomainService(IRepository<NameSpace, Guid> repository)
     {
         _repository = repository;
     }
 
-    public async Task<NameSpace> Create(string nId, string name, string desc, Guid creator)
+    public async Task<NameSpace> Create(string nId, string name, string desc, Guid? creator)
     {
         await CheckNameSpaceIfAnyException(nId);
 
@@ -32,6 +35,17 @@ public class NameSpaceDomainService : DomainService
         return await _repository.InsertAsync(nameSpace);
     }
 
+    public async Task<bool> DeleteAsync(Guid id, CancellationToken token)
+    {
+        var any = await _routeRepository.AnyAsync(s => s.NamespaceId.Equals(id), token);
+
+        if (!any)
+        {
+            await _repository.DeleteAsync(s => s.Id.Equals(id), true, token);
+        }
+
+        return true;
+    }
     private async Task CheckNameSpaceIfAnyException(string nId)
     {
         var any = await _repository.AnyAsync(n => n.NId.Equals(nId));

@@ -1,4 +1,8 @@
 ﻿using AutoMapper;
+using Ocelot.Admin.Entity.NameSpaces;
+using Ocelot.Admin.Entity.Roles;
+using Ocelot.Admin.NameSpaces;
+using Ocelot.Admin.Roles;
 
 namespace Ocelot.Admin;
 
@@ -6,8 +10,7 @@ public class AdminApplicationAutoMapperProfile : Profile
 {
     public AdminApplicationAutoMapperProfile()
     {
-        /* You can configure your AutoMapper mapping configuration here.
-         * Alternatively, you can split your mapping configurations
-         * into multiple profile classes for a better organization. */
+        CreateMap<Role, RoleViewModel>();
+        CreateMap<NameSpace, NameSpaceViewModel>();
     }
 }

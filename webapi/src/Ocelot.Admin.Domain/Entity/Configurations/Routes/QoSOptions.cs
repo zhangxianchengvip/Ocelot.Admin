@@ -11,4 +11,5 @@ public class QoSOptions : Entity<Guid>
     public int ExceptionsAllowedBeforeBreaking { get; set; }
     public int DurationOfBreak { get; set; }
     public int TimeoutValue { get; set; }
+    private QoSOptions() { }
 }

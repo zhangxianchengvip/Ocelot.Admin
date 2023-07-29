@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Volo.Abp.Domain.Entities;
 
 namespace Ocelot.Admin.Entity.Configurations.Routes.RateLimit;
-public class RateLimitOptions
+public class RateLimitOptions : Entity<Guid>
 {
     public ClientWhitelist ClientWhitelist { get; set; }
     public bool EnableRateLimiting { get; set; }

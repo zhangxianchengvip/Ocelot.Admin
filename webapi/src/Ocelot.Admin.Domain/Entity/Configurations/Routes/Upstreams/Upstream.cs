@@ -12,7 +12,7 @@ public class Upstream : Entity<Guid>
 {
     public string PathTemplate { get; private set; }
     public ICollection<UpstreamHttpMethod> UpstreamHttpMethod { get; private set; }
-
+    private Upstream() { }
     public Upstream(Guid id, string pathTemplate, List<HttpMethod> methods) : base(id)
     {
         SetUpstream(pathTemplate, methods);

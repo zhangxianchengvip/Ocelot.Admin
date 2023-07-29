@@ -1,12 +1,6 @@
-using System.IO;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
+using Microsoft.OpenApi.Models;
 using Ocelot.Admin.EntityFrameworkCore;
 using Ocelot.Admin.Localization;
-using Microsoft.OpenApi.Models;
 using Volo.Abp;
 using Volo.Abp.AspNetCore.Mvc;
 using Volo.Abp.AspNetCore.Mvc.Localization;
@@ -126,7 +120,9 @@ public class AdminWebModule : AbpModule
     {
         Configure<AbpAspNetCoreMvcOptions>(options =>
         {
-            options.ConventionalControllers.Create(typeof(AdminApplicationModule).Assembly);
+            options.ConventionalControllers.Create(typeof(AdminApplicationModule).Assembly, opts => {
+                opts.RootPath = "v1";
+            });
         });
     }
 
