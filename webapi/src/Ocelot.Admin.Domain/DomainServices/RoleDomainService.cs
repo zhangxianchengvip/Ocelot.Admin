@@ -1,4 +1,5 @@
 ﻿using Ocelot.Admin.Entity.Roles;
+using Ocelot.Admin.Properties.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -33,9 +34,14 @@ public class RoleDomainService : DomainService
         return await _repository.InsertAsync(role, true, token);
     }
 
+    public async Task<Role> AddRoleNameSpace(Guid id, Guid nameSpaceId, Operation operationId)
+    {
+        var role = await GetRoleIfNotHasThrowException(id);
+        role.AddRoleNameSpace(nameSpaceId, operationId);
+        return role;
+    }
     private async Task CheckRoleIfAnyThrowException(string name)
     {
-
         if (await _repository.AnyAsync(s => s.Name.Equals(name)))
         {
             throw new BusinessException(AdminDomainErrorCodes.RoleExist)
@@ -43,5 +49,10 @@ public class RoleDomainService : DomainService
                 Data = { { "name", name } }
             };
         }
+    }
+
+    private async Task<Role> GetRoleIfNotHasThrowException(Guid id)
+    {
+        return await _repository.GetAsync(id);
     }
 }

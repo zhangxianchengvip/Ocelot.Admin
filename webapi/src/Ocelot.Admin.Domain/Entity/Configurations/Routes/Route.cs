@@ -1,6 +1,7 @@
 ﻿using Ocelot.Admin.Entity.Configurations.Routes.Downstreams;
 using Ocelot.Admin.Entity.Configurations.Routes.RateLimit;
 using Ocelot.Admin.Entity.Configurations.Routes.Upstreams;
+using Ocelot.Admin.Properties.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
