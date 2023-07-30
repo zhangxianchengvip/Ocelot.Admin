@@ -6,6 +6,16 @@
 @using AntDesign.TableModels
 
 <Table TItem="Data" DataSource="@data" OnRowClick="OnRowClick">
+    <TitleTemplate>
+        <GridRow>
+            <GridCol Span="4">
+                <Title Level="3">Table Title</Title>
+            </GridCol>
+            <GridCol Span="8" Offset="12">
+                <Search Placeholder="Search Name" @bind-Value="searchString" OnSearch="()=>_table?.ReloadData()" />
+            </GridCol>
+        </GridRow>
+    </TitleTemplate>
     <PropertyColumn Property="c=>c.Name">
         <a>@context.Name</a>
     </PropertyColumn>
