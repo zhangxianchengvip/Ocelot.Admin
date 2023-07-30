@@ -29,7 +29,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ocelot.Admin.TestBase", "te
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ocelot.Admin.Domain.Tests", "test\Ocelot.Admin.Domain.Tests\Ocelot.Admin.Domain.Tests.csproj", "{E512F4D9-9375-480F-A2F6-A46509F9D824}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ocelot.Admin.HttpApi.Host", "src\Ocelot.Admin.HttpApi.Host\Ocelot.Admin.HttpApi.Host.csproj", "{0233950D-54C2-4570-A139-354722985CE9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ocelot.Admin.HttpApi.Host", "src\Ocelot.Admin.HttpApi.Host\Ocelot.Admin.HttpApi.Host.csproj", "{0233950D-54C2-4570-A139-354722985CE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ocelot.Admin.Blazor", "src\Ocelot.Admin.Blazor\Ocelot.Admin.Blazor.csproj", "{8C27588B-8990-41E2-BCCB-1D313F178AD3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -85,6 +87,10 @@ Global
 		{0233950D-54C2-4570-A139-354722985CE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0233950D-54C2-4570-A139-354722985CE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0233950D-54C2-4570-A139-354722985CE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C27588B-8990-41E2-BCCB-1D313F178AD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C27588B-8990-41E2-BCCB-1D313F178AD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C27588B-8990-41E2-BCCB-1D313F178AD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C27588B-8990-41E2-BCCB-1D313F178AD3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -102,6 +108,7 @@ Global
 		{91853F21-9CD9-4132-BC29-A7D5D84FFFE7} = {04DBDB01-70F4-4E06-B468-8F87850B22BE}
 		{E512F4D9-9375-480F-A2F6-A46509F9D824} = {04DBDB01-70F4-4E06-B468-8F87850B22BE}
 		{0233950D-54C2-4570-A139-354722985CE9} = {CA9AC87F-097E-4F15-8393-4BC07735A5B0}
+		{8C27588B-8990-41E2-BCCB-1D313F178AD3} = {CA9AC87F-097E-4F15-8393-4BC07735A5B0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {28315BFD-90E7-4E14-A2EA-F3D23AF4126F}
