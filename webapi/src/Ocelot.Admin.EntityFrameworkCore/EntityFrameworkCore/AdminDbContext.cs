@@ -1,9 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Ocelot.Admin.Entity.Configurations.Routes;
-using Ocelot.Admin.Entity.NameSpaces;
-using Ocelot.Admin.Entity.Roles;
 using Ocelot.Admin.EntityTypeConfigurations;
+using Ocelot.Admin.NameSpaces;
+using Ocelot.Admin.Roles;
 using System.Reflection.Emit;
 using Volo.Abp.Data;
 using Volo.Abp.DependencyInjection;

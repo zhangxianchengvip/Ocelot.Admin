@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Volo.Abp.Domain.Entities;
 
-namespace Ocelot.Admin.Entity.Configurations.Routes.RateLimit;
+namespace Ocelot.Admin.Ocelots.Routes;
 public class RateLimitOptions : Entity<Guid>
 {
     public ClientWhitelist ClientWhitelist { get; set; }

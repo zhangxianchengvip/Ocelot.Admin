@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Volo.Abp.Domain.Values;
 
-namespace Ocelot.Admin.Entity.Configurations.Routes.Upstreams;
+namespace Ocelot.Admin.Ocelots.Routes;
 
 public class UpstreamHttpMethod : ValueObject
 {

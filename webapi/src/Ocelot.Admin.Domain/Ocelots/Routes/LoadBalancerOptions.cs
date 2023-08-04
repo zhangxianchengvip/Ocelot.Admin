@@ -3,7 +3,7 @@ using System;
 using Volo.Abp;
 using Volo.Abp.Domain.Entities;
 
-namespace Ocelot.Admin.Entity.Configurations.Routes.LoadBalancerOptions;
+namespace Ocelot.Admin.Ocelots.Routes;
 public class LoadBalancerOptions : Entity<Guid>
 {
     public string Type { get; set; }

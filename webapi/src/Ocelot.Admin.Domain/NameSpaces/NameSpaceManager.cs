@@ -1,12 +1,12 @@
-﻿using System;
+﻿using Ocelot.Admin.Ocelots.Routes;
+using System;
 using System.Threading;
 using System.Threading.Tasks;
-using Ocelot.Admin.Entity.Configurations.Routes;
 using Volo.Abp;
 using Volo.Abp.Domain.Repositories;
 using Volo.Abp.Domain.Services;
 
-namespace Ocelot.Admin.Entity.NameSpaces;
+namespace Ocelot.Admin.NameSpaces;
 
 public class NameSpaceManager : DomainService
 {

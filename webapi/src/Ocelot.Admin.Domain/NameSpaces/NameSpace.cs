@@ -3,13 +3,13 @@ using Volo.Abp;
 using Volo.Abp.Domain.Entities;
 using Volo.Abp.Localization;
 
-namespace Ocelot.Admin.Entity.NameSpaces;
+namespace Ocelot.Admin.NameSpaces;
 
 public class NameSpace : BasicAggregateRoot<Guid>
 {
     public string NId { get; init; }
     public string Name { get; private set; }
-    public string? Desc { get; private set; }
+    public string Desc { get; private set; }
     public Guid? Creator { get; init; }
     public DateTime CreateTime { get; init; }
     public Guid? Updater { get; set; }

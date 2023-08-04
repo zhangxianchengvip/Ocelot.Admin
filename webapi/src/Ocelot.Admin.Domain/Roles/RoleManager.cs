@@ -10,7 +10,7 @@ using Volo.Abp;
 using Volo.Abp.Domain.Repositories;
 using Volo.Abp.Domain.Services;
 
-namespace Ocelot.Admin.Entity.Roles;
+namespace Ocelot.Admin.Roles;
 public class RoleManager : DomainService
 {
     private readonly IRepository<Role, Guid> _repository;

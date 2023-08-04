@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Volo.Abp;
 using Volo.Abp.Domain.Values;
 
-namespace Ocelot.Admin.Entity.Configurations.Routes.Downstreams;
+namespace Ocelot.Admin.Ocelots.Routes;
 public class DownstreamHostAndPort : ValueObject
 {
     public string Host { get; set; }

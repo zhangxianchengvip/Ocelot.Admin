@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Volo.Abp.Domain.Entities;
 
-namespace Ocelot.Admin.Entity.Configurations.Routes;
+namespace Ocelot.Admin.Ocelots.Routes;
 public class HttpHandlerOptions : Entity<Guid>
 {
     public bool UseTracing { get; set; }

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using Volo.Abp;
 using Volo.Abp.Domain.Entities;
 
-namespace Ocelot.Admin.Entity.Roles;
+namespace Ocelot.Admin.Roles;
 public class Role : BasicAggregateRoot<Guid>
 {
     public string Name { get; init; }

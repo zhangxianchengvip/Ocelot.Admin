@@ -1,21 +1,27 @@
-﻿using Ocelot.Admin.Entity.Configurations.Routes.Downstreams;
-using Ocelot.Admin.Entity.Configurations.Routes.RateLimit;
-using Ocelot.Admin.Entity.Configurations.Routes.Upstreams;
-using Ocelot.Admin.Properties.Enums;
+﻿using Ocelot.Admin.Properties.Enums;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Volo.Abp;
 using Volo.Abp.Domain.Entities;
-using Volo.Abp.Domain.Repositories;
-using Volo.Abp.Users;
 
-namespace Ocelot.Admin.Entity.Configurations.Routes;
+namespace Ocelot.Admin.Ocelots.Routes;
 
 public class Route : BasicAggregateRoot<Guid>
 {
+    public string Name { get; private set; }
+    public string Desc { get; private set; }
+    public Guid NamespaceId { get; set; }
+    public Guid Creator { get; init; }
+    public DateTime CreeteTime { get; init; }
+    public Guid Updater { get; set; }
+    public DateTime UpdateTime { get; set; }
+    public string ServiceName { get; private set; }
+    public Upstream Upstream { get; private set; }
+    public Downstream Downstream { get; private set; }
+    public LoadBalancerOptions LoadBalancerOptions { get; private set; }
+    public RateLimitOptions RateLimitOptions { get; private set; }
+    public QoSOptions QoSOptions { get; private set; }
+    public FileCacheOptions FileCacheOptions { get; private set; }
     private Route()
     {
     }
@@ -32,20 +38,7 @@ public class Route : BasicAggregateRoot<Guid>
         NamespaceId = Check.NotDefaultOrNull<Guid>(nameSpaceId, nameof(nameSpaceId));
     }
 
-    public string Name { get; private set; }
-    public string Desc { get; private set; }
-    public Guid NamespaceId { get; set; }
-    public Guid Creator { get; init; }
-    public DateTime CreeteTime { get; init; }
-    public Guid Updater { get; set; }
-    public DateTime UpdateTime { get; set; }
-    public string ServiceName { get; private set; }
-    public Upstream Upstream { get; private set; }
-    public Downstream Downstream { get; private set; }
-    public LoadBalancerOptions.LoadBalancerOptions LoadBalancerOptions { get; private set; }
-    public RateLimitOptions RateLimitOptions { get; private set; }
-    public QoSOptions QoSOptions { get; private set; }
-    public FileCacheOptions FileCacheOptions { get; private set; }
+
 
     internal Route SetUpstream(string pathTemplate, List<HttpMethod> methods)
     {

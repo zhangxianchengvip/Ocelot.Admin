@@ -9,7 +9,7 @@ using System.Xml.Linq;
 using Volo.Abp;
 using Volo.Abp.Domain.Entities;
 
-namespace Ocelot.Admin.Entity.Users;
+namespace Ocelot.Admin.Users;
 public class User : BasicAggregateRoot<Guid>
 {
     public string LoginName { get; set; }

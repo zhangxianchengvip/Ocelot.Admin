@@ -1,19 +1,13 @@
-﻿using Ocelot.Admin.Entity.Configurations.Routes;
+﻿using Ocelot.Admin.Ocelots.Routes;
+using Ocelot.Admin.Properties.Enums;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
-using Ocelot.Admin.Entity.Configurations.Routes.Downstreams;
-using Ocelot.Admin.Entity.Configurations.Routes.Upstreams;
 using Volo.Abp;
 using Volo.Abp.Domain.Repositories;
 using Volo.Abp.Domain.Services;
-using Volo.Abp.Guids;
-using Volo.Abp.Users;
-using Ocelot.Admin.Properties.Enums;
 
-namespace Ocelot.Admin.Entity.Configurations;
+namespace Ocelot.Admin.Ocelots;
 
 public class RouteManager : DomainService
 {

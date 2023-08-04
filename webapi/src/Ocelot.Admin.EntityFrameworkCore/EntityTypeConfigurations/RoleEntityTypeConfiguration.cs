@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Ocelot.Admin.Entity.Roles;
+using Ocelot.Admin.Roles;
 using System;
 using System.Collections.Generic;
 using System.Linq;

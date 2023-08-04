@@ -1,13 +1,9 @@
-﻿using Ocelot.Admin.Entity.Users;
-using Ocelot.Admin.Properties.Enums;
+﻿using Ocelot.Admin.Properties.Enums;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Volo.Abp.Domain.Values;
 
-namespace Ocelot.Admin.Entity.Roles;
+namespace Ocelot.Admin.Roles;
 public class RoleNameSpace : ValueObject
 {
     public Guid RoleId { get; init; }

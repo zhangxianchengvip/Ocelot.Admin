@@ -7,7 +7,7 @@ using Ocelot.Admin.Properties.Enums;
 using Volo.Abp;
 using Volo.Abp.Domain.Entities;
 
-namespace Ocelot.Admin.Entity.Configurations.Routes.Upstreams;
+namespace Ocelot.Admin.Ocelots.Routes;
 
 public class Upstream : Entity<Guid>
 {

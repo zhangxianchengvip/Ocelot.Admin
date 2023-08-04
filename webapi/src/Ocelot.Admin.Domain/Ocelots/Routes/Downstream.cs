@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Volo.Abp;
 using Volo.Abp.Domain.Entities;
 
-namespace Ocelot.Admin.Entity.Configurations.Routes.Downstreams;
+namespace Ocelot.Admin.Ocelots.Routes;
 public class Downstream : Entity<Guid>
 {
     public string PathTemplate { get; private set; }

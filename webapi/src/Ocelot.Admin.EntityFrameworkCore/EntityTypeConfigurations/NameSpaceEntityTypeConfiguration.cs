@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Ocelot.Admin.Entity.NameSpaces;
+using Ocelot.Admin.NameSpaces;
 
 namespace Ocelot.Admin.EntityTypeConfigurations;
 

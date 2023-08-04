@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Volo.Abp.Domain.Values;
 
-namespace Ocelot.Admin.Entity.Users;
+namespace Ocelot.Admin.Users;
 public class UserRole : ValueObject
 {
     public Guid UserId { get; set; }

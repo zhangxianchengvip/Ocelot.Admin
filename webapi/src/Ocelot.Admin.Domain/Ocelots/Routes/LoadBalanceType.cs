@@ -1,6 +1,6 @@
 ﻿using Ardalis.SmartEnum;
 
-namespace Ocelot.Admin.Entity.Configurations.Routes.LoadBalancerOption;
+namespace Ocelot.Admin.Ocelots.Routes;
 public class LoadBalanceType : SmartEnum<LoadBalanceType>
 {
     public static readonly LoadBalanceType LeastConnection = new LoadBalanceType(nameof(LeastConnection), 1);

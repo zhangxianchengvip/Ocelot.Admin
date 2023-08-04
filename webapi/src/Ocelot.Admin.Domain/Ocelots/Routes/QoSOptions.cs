@@ -5,11 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 using Volo.Abp.Domain.Entities;
 
-namespace Ocelot.Admin.Entity.Configurations.Routes;
-public class QoSOptions : Entity<Guid>
+namespace Ocelot.Admin.Ocelots.Routes;
+public class QosOptions : Entity<Guid>
 {
     public int ExceptionsAllowedBeforeBreaking { get; set; }
     public int DurationOfBreak { get; set; }
     public int TimeoutValue { get; set; }
-    private QoSOptions() { }
+    private QosOptions() { }
 }
