@@ -1,5 +1,4 @@
-﻿using Ocelot.Admin.DomainServices;
-using Ocelot.Admin.Entity.Roles;
+﻿using Ocelot.Admin.Entity.Roles;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,9 +11,9 @@ using Volo.Abp.Domain.Repositories;
 namespace Ocelot.Admin.Roles;
 public class RoleAppService : ApplicationService, IRoleAppService
 {
-    private readonly RoleDomainService _domainService;
+    private readonly RoleManager _domainService;
     private readonly IRepository<Role, Guid> _repository;
-    public RoleAppService(RoleDomainService domainService, IRepository<Role, Guid> repository)
+    public RoleAppService(RoleManager domainService, IRepository<Role, Guid> repository)
     {
         _domainService = domainService;
         _repository = repository;

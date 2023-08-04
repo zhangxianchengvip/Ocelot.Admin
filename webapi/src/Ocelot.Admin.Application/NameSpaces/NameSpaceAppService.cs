@@ -1,5 +1,4 @@
-﻿using Ocelot.Admin.DomainServices;
-using Ocelot.Admin.Entity.NameSpaces;
+﻿using Ocelot.Admin.Entity.NameSpaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,9 +11,9 @@ using Volo.Abp.Domain.Repositories;
 namespace Ocelot.Admin.NameSpaces;
 public class NamespaceAppService : ApplicationService, INamespacesAppService
 {
-    private readonly NameSpaceDomainService _domainService;
+    private readonly NameSpaceManager _domainService;
     private readonly IRepository<NameSpace, Guid> _repository;
-    public NamespaceAppService(NameSpaceDomainService domainService, IRepository<NameSpace, Guid> repository)
+    public NamespaceAppService(NameSpaceManager domainService, IRepository<NameSpace, Guid> repository)
     {
         _domainService = domainService;
         _repository = repository;

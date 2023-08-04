@@ -2,19 +2,18 @@
 using System.Threading;
 using System.Threading.Tasks;
 using Ocelot.Admin.Entity.Configurations.Routes;
-using Ocelot.Admin.Entity.NameSpaces;
 using Volo.Abp;
 using Volo.Abp.Domain.Repositories;
 using Volo.Abp.Domain.Services;
 
-namespace Ocelot.Admin.DomainServices;
+namespace Ocelot.Admin.Entity.NameSpaces;
 
-public class NameSpaceDomainService : DomainService
+public class NameSpaceManager : DomainService
 {
     private readonly IRepository<NameSpace, Guid> _repository;
     private readonly IRepository<Route, Guid> _routeRepository;
 
-    public NameSpaceDomainService(IRepository<NameSpace, Guid> repository)
+    public NameSpaceManager(IRepository<NameSpace, Guid> repository)
     {
         _repository = repository;
     }

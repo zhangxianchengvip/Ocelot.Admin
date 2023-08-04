@@ -13,13 +13,13 @@ using Volo.Abp.Guids;
 using Volo.Abp.Users;
 using Ocelot.Admin.Properties.Enums;
 
-namespace Ocelot.Admin.DomainServices;
+namespace Ocelot.Admin.Entity.Configurations;
 
-public class RouteDomainService : DomainService
+public class RouteManager : DomainService
 {
     private readonly IRepository<Route, Guid> _repository;
 
-    public RouteDomainService(IRepository<Route, Guid> repository)
+    public RouteManager(IRepository<Route, Guid> repository)
     {
         _repository = repository;
     }
