@@ -20,7 +20,7 @@ public class Route : BasicAggregateRoot<Guid>
     public Downstream Downstream { get; private set; }
     public LoadBalancerOptions LoadBalancerOptions { get; private set; }
     public RateLimitOptions RateLimitOptions { get; private set; }
-    public QoSOptions QoSOptions { get; private set; }
+    public QosOptions QoSOptions { get; private set; }
     public FileCacheOptions FileCacheOptions { get; private set; }
     private Route()
     {
