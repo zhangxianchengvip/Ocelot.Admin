@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore.Metadata;
 using Ocelot.Admin.EntityTypeConfigurations;
 using Ocelot.Admin.NameSpaces;
 using Ocelot.Admin.Roles;
+using Ocelot.Admin.Users;
 using Volo.Abp.Data;
 using Volo.Abp.EntityFrameworkCore;
 
@@ -13,7 +14,7 @@ public class AdminDbContext : AbpDbContext<AdminDbContext>
 {
     public DbSet<NameSpace> NameSpaces { get; set; }
     public DbSet<Role> Roles { get; set; }
-    //public DbSet<Route> Routes { get; set; }
+    public DbSet<User> Users { get; set; }
 
     public AdminDbContext(DbContextOptions<AdminDbContext> options) : base(options)
     {
