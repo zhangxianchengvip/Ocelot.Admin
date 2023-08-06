@@ -9,9 +9,10 @@ using Volo.Abp.Domain.Values;
 namespace Ocelot.Admin.Users;
 public class UserRole : Entity
 {
-    public Guid UserId { get; set; }
-    public Guid RoleId { get; set; }
+    public Guid UserId { get; init; }
+    public Guid RoleId { get; init; }
 
+    private UserRole() { }
     public UserRole(Guid userId, Guid roleId)
     {
         UserId = userId;

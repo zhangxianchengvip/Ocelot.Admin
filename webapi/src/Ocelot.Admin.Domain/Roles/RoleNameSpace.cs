@@ -1,15 +1,17 @@
 ﻿using Ocelot.Admin.Properties.Enums;
 using System;
 using System.Collections.Generic;
+using Volo.Abp.Domain.Entities;
 using Volo.Abp.Domain.Values;
+using Volo.Abp.Uow;
 
 namespace Ocelot.Admin.Roles;
-public class RoleNameSpace : ValueObject
+public class RoleNameSpace : Entity
 {
     public Guid RoleId { get; init; }
     public Guid NameSpaceId { get; init; }
     public int OperationId { get; init; }
-
+    private RoleNameSpace() { }
     public RoleNameSpace(Guid roleId, Guid nameSpaceId, Operation operationId)
     {
         RoleId = roleId;
@@ -17,8 +19,8 @@ public class RoleNameSpace : ValueObject
         OperationId = operationId;
     }
 
-    protected override IEnumerable<object> GetAtomicValues()
+    public override object[] GetKeys()
     {
-        yield return new object[] { RoleId, NameSpaceId };
+        return new object[] { new { RoleId, NameSpaceId } };
     }
 }
