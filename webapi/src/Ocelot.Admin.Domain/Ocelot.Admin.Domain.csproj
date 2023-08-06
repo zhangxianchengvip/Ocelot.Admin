@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <PackageReference Include="Ardalis.SmartEnum" Version="2.1.0" />
+    <PackageReference Include="Auto.Options" Version="1.0.0" />
     <PackageReference Include="Volo.Abp.Ddd.Domain" Version="6.0.3" />
   </ItemGroup>
 

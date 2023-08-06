@@ -59,7 +59,6 @@ public class UserManager : DomainService
         var any = await _role.AnyAsync(s => s.Id.Equals(roleId));
         if (!any)
         {
-
             throw new BusinessException(AdminDomainErrorCodes.NameSpaceExist)
             {
                 Data =
@@ -67,7 +66,6 @@ public class UserManager : DomainService
                     { "loginName", roleId }
                 }
             };
-
         }
     }
 }
