@@ -56,7 +56,7 @@ namespace Ocelot.Admin.Migrations
                         .IsUnique()
                         .HasFilter("[NId] IS NOT NULL");
 
-                    b.ToTable("OcelotNameSpaces");
+                    b.ToTable("NameSpaces");
                 });
 
             modelBuilder.Entity("Ocelot.Admin.Roles.Role", b =>
@@ -79,7 +79,7 @@ namespace Ocelot.Admin.Migrations
                         .IsUnique()
                         .HasFilter("[Name] IS NOT NULL");
 
-                    b.ToTable("OcelotRoles");
+                    b.ToTable("Roles");
                 });
 
             modelBuilder.Entity("Ocelot.Admin.Roles.RoleNameSpace", b =>
@@ -95,7 +95,7 @@ namespace Ocelot.Admin.Migrations
 
                     b.HasKey("RoleId", "NameSpaceId");
 
-                    b.ToTable("OcelotRoleNameSpace");
+                    b.ToTable("RoleNameSpace");
                 });
 
             modelBuilder.Entity("Ocelot.Admin.Users.User", b =>
@@ -112,20 +112,23 @@ namespace Ocelot.Admin.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("OcelotUsers");
+                    b.ToTable("Users");
                 });
 
             modelBuilder.Entity("Ocelot.Admin.Users.UserRole", b =>
                 {
+                    b.Property<Guid>("RoleId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
                     b.Property<Guid>("UserId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("RoleId")
-                        .HasColumnType("uniqueidentifier");
+                    b.HasKey("RoleId");
 
-                    b.HasKey("UserId", "RoleId");
+                    b.HasIndex("UserId");
 
-                    b.ToTable("OcelotUserRole");
+                    b.ToTable("UserRole");
                 });
 
             modelBuilder.Entity("Ocelot.Admin.Roles.RoleNameSpace", b =>

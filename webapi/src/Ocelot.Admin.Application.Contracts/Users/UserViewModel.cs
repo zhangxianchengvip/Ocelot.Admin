@@ -5,6 +5,6 @@ using System.Text;
 namespace Ocelot.Admin.Users;
 public class UserViewModel
 {
-    public int Id { get; set; }
+    public Guid Id { get; set; }
     public string LoginName { get; set; }
 }

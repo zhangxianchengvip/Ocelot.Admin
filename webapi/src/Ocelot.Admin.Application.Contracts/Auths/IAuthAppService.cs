@@ -8,5 +8,5 @@ using Volo.Abp.Application.Services;
 namespace Ocelot.Admin.Auths;
 public interface IAuthAppService : IApplicationService
 {
-    public Task<AuthViewModel> Authentication(AuthInput input, CancellationToken token);
+    public Task<AuthViewModel> Login(AuthInput input, CancellationToken token);
 }

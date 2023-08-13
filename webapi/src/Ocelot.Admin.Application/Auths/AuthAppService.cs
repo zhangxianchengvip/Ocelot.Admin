@@ -20,17 +20,20 @@ public class AuthAppService : ApplicationService, IAuthAppService
 {
     private readonly IRepository<User, Guid> _user;
     private readonly IRepository<Role, Guid> _role;
+    private readonly IUserRepository _userR;
     private readonly JwtOptions _jwt;
 
-    public AuthAppService(IRepository<User, Guid> user, IRepository<Role, Guid> role, IOptionsSnapshot<JwtOptions> options)
+    public AuthAppService(IRepository<User, Guid> user, IRepository<Role, Guid> role, IOptionsSnapshot<JwtOptions> options, IUserRepository userR)
     {
         _user = user;
         _role = role;
         _jwt = options.Value;
+        _userR = userR;
     }
 
-    public async Task<AuthViewModel> Authentication(AuthInput input, CancellationToken token)
+    public async Task<AuthViewModel> Login(AuthInput input, CancellationToken token)
     {
+        var ss = await _userR.GetById(input.LoginName);
         var user = await _user.FindAsync(s => s.LoginName.Equals(input.LoginName), true, token);
 
         if (user is null)

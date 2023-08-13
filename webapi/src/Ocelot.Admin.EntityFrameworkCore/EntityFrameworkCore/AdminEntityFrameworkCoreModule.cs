@@ -1,4 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
+using Ocelot.Admin.Repositorys;
+using Ocelot.Admin.Users;
 using Volo.Abp.EntityFrameworkCore;
 using Volo.Abp.EntityFrameworkCore.SqlServer;
 using Volo.Abp.Modularity;
@@ -24,5 +26,6 @@ public class AdminEntityFrameworkCoreModule : AbpModule
             options.UseSqlServer();
         });
 
+        context.Services.AddScoped<IUserRepository, UserRepository>();
     }
 }

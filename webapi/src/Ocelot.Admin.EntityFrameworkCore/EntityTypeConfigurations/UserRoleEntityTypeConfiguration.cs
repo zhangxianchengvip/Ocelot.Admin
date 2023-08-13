@@ -13,6 +13,6 @@ internal class UserRoleEntityTypeConfiguration : IEntityTypeConfiguration<UserRo
 {
     public void Configure(EntityTypeBuilder<UserRole> builder)
     {
-        builder.HasKey(ur => new { ur.UserId, ur.RoleId });
+        builder.HasKey(ur => ur.RoleId);
     }
 }

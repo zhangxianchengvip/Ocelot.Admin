@@ -15,5 +15,6 @@ internal class UserEntityTypeConfiguration : IEntityTypeConfiguration<User>
     {
         builder.HasKey(n => n.Id);
         builder.Property("_password").HasColumnName("Password");
+        builder.HasMany(s => s.UserRoles).WithOne().HasForeignKey(s => s.UserId);
     }
 }
