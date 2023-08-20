@@ -22,6 +22,7 @@ using Volo.Abp.Modularity;
 using Volo.Abp.Swashbuckle;
 using Volo.Abp.UI.Navigation.Urls;
 using Volo.Abp.VirtualFileSystem;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 namespace OcelotAdmin;
 
@@ -159,6 +160,14 @@ public class OcelotAdminHttpApiHostModule : AbpModule
         ).AddEntityFramework();
     }
 
+    private void ConfigureAuthentication(ServiceConfigurationContext context)
+    {
+        context.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+            .AddJwtBearer(option =>
+            {
+
+            });
+    }
     public override void OnApplicationInitialization(ApplicationInitializationContext context)
     {
         var app = context.GetApplicationBuilder();
