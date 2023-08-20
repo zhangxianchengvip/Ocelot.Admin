@@ -1,0 +1,15 @@
+E:\SourceCode\TestAbp\OcelotAdmin\src\OcelotAdmin.Application.Contracts\bin\Debug\net6.0\OcelotAdmin.Application.Contracts.deps.json
+E:\SourceCode\TestAbp\OcelotAdmin\src\OcelotAdmin.Application.Contracts\bin\Debug\net6.0\OcelotAdmin.Application.Contracts.dll
+E:\SourceCode\TestAbp\OcelotAdmin\src\OcelotAdmin.Application.Contracts\bin\Debug\net6.0\OcelotAdmin.Application.Contracts.pdb
+E:\SourceCode\TestAbp\OcelotAdmin\src\OcelotAdmin.Application.Contracts\bin\Debug\net6.0\OcelotAdmin.Domain.Shared.dll
+E:\SourceCode\TestAbp\OcelotAdmin\src\OcelotAdmin.Application.Contracts\bin\Debug\net6.0\OcelotAdmin.Domain.Shared.pdb
+E:\SourceCode\TestAbp\OcelotAdmin\src\OcelotAdmin.Application.Contracts\obj\Debug\net6.0\OcelotAdmin.Application.Contracts.csproj.AssemblyReference.cache
+E:\SourceCode\TestAbp\OcelotAdmin\src\OcelotAdmin.Application.Contracts\obj\Debug\net6.0\OcelotAdmin.Application.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+E:\SourceCode\TestAbp\OcelotAdmin\src\OcelotAdmin.Application.Contracts\obj\Debug\net6.0\OcelotAdmin.Application.Contracts.AssemblyInfoInputs.cache
+E:\SourceCode\TestAbp\OcelotAdmin\src\OcelotAdmin.Application.Contracts\obj\Debug\net6.0\OcelotAdmin.Application.Contracts.AssemblyInfo.cs
+E:\SourceCode\TestAbp\OcelotAdmin\src\OcelotAdmin.Application.Contracts\obj\Debug\net6.0\OcelotAdmin.Application.Contracts.csproj.CoreCompileInputs.cache
+E:\SourceCode\TestAbp\OcelotAdmin\src\OcelotAdmin.Application.Contracts\obj\Debug\net6.0\OcelotAdmin.Application.Contracts.csproj.CopyComplete
+E:\SourceCode\TestAbp\OcelotAdmin\src\OcelotAdmin.Application.Contracts\obj\Debug\net6.0\OcelotAdmin.Application.Contracts.dll
+E:\SourceCode\TestAbp\OcelotAdmin\src\OcelotAdmin.Application.Contracts\obj\Debug\net6.0\refint\OcelotAdmin.Application.Contracts.dll
+E:\SourceCode\TestAbp\OcelotAdmin\src\OcelotAdmin.Application.Contracts\obj\Debug\net6.0\OcelotAdmin.Application.Contracts.pdb
+E:\SourceCode\TestAbp\OcelotAdmin\src\OcelotAdmin.Application.Contracts\obj\Debug\net6.0\ref\OcelotAdmin.Application.Contracts.dll

@@ -1,0 +1,323 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\SourceCode\\Ocelot\\Ocelot.Admin\\webapi\\src\\OcelotAdmin.Application\\OcelotAdmin.Application.csproj": {}
+  },
+  "projects": {
+    "E:\\SourceCode\\Ocelot\\Ocelot.Admin\\webapi\\src\\OcelotAdmin.Application.Contracts\\OcelotAdmin.Application.Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\SourceCode\\Ocelot\\Ocelot.Admin\\webapi\\src\\OcelotAdmin.Application.Contracts\\OcelotAdmin.Application.Contracts.csproj",
+        "projectName": "OcelotAdmin.Application.Contracts",
+        "projectPath": "E:\\SourceCode\\Ocelot\\Ocelot.Admin\\webapi\\src\\OcelotAdmin.Application.Contracts\\OcelotAdmin.Application.Contracts.csproj",
+        "packagesPath": "C:\\Users\\zhangxiancheng\\.nuget\\packages\\",
+        "outputPath": "E:\\SourceCode\\Ocelot\\Ocelot.Admin\\webapi\\src\\OcelotAdmin.Application.Contracts\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "E:\\SourceCode\\Ocelot\\Ocelot.Admin\\webapi\\NuGet.Config",
+          "C:\\Users\\zhangxiancheng\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "http://nuget.forclass.net/nuget": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.myget.org/F/blazorise/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "E:\\SourceCode\\Ocelot\\Ocelot.Admin\\webapi\\src\\OcelotAdmin.Domain.Shared\\OcelotAdmin.Domain.Shared.csproj": {
+                "projectPath": "E:\\SourceCode\\Ocelot\\Ocelot.Admin\\webapi\\src\\OcelotAdmin.Domain.Shared\\OcelotAdmin.Domain.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.1.1, )"
+            },
+            "Volo.Abp.Ddd.Application.Contracts": {
+              "target": "Package",
+              "version": "[6.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\SourceCode\\Ocelot\\Ocelot.Admin\\webapi\\src\\OcelotAdmin.Application\\OcelotAdmin.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\SourceCode\\Ocelot\\Ocelot.Admin\\webapi\\src\\OcelotAdmin.Application\\OcelotAdmin.Application.csproj",
+        "projectName": "OcelotAdmin.Application",
+        "projectPath": "E:\\SourceCode\\Ocelot\\Ocelot.Admin\\webapi\\src\\OcelotAdmin.Application\\OcelotAdmin.Application.csproj",
+        "packagesPath": "C:\\Users\\zhangxiancheng\\.nuget\\packages\\",
+        "outputPath": "E:\\SourceCode\\Ocelot\\Ocelot.Admin\\webapi\\src\\OcelotAdmin.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "E:\\SourceCode\\Ocelot\\Ocelot.Admin\\webapi\\NuGet.Config",
+          "C:\\Users\\zhangxiancheng\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "http://nuget.forclass.net/nuget": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.myget.org/F/blazorise/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "E:\\SourceCode\\Ocelot\\Ocelot.Admin\\webapi\\src\\OcelotAdmin.Application.Contracts\\OcelotAdmin.Application.Contracts.csproj": {
+                "projectPath": "E:\\SourceCode\\Ocelot\\Ocelot.Admin\\webapi\\src\\OcelotAdmin.Application.Contracts\\OcelotAdmin.Application.Contracts.csproj"
+              },
+              "E:\\SourceCode\\Ocelot\\Ocelot.Admin\\webapi\\src\\OcelotAdmin.Domain\\OcelotAdmin.Domain.csproj": {
+                "projectPath": "E:\\SourceCode\\Ocelot\\Ocelot.Admin\\webapi\\src\\OcelotAdmin.Domain\\OcelotAdmin.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.21, )"
+            },
+            "Volo.Abp.AutoMapper": {
+              "target": "Package",
+              "version": "[6.0.3, )"
+            },
+            "Volo.Abp.Ddd.Application": {
+              "target": "Package",
+              "version": "[6.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\SourceCode\\Ocelot\\Ocelot.Admin\\webapi\\src\\OcelotAdmin.Domain.Shared\\OcelotAdmin.Domain.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\SourceCode\\Ocelot\\Ocelot.Admin\\webapi\\src\\OcelotAdmin.Domain.Shared\\OcelotAdmin.Domain.Shared.csproj",
+        "projectName": "OcelotAdmin.Domain.Shared",
+        "projectPath": "E:\\SourceCode\\Ocelot\\Ocelot.Admin\\webapi\\src\\OcelotAdmin.Domain.Shared\\OcelotAdmin.Domain.Shared.csproj",
+        "packagesPath": "C:\\Users\\zhangxiancheng\\.nuget\\packages\\",
+        "outputPath": "E:\\SourceCode\\Ocelot\\Ocelot.Admin\\webapi\\src\\OcelotAdmin.Domain.Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "E:\\SourceCode\\Ocelot\\Ocelot.Admin\\webapi\\NuGet.Config",
+          "C:\\Users\\zhangxiancheng\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "http://nuget.forclass.net/nuget": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.myget.org/F/blazorise/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Auto.Options": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "Volo.Abp.Validation": {
+              "target": "Package",
+              "version": "[6.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\SourceCode\\Ocelot\\Ocelot.Admin\\webapi\\src\\OcelotAdmin.Domain\\OcelotAdmin.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\SourceCode\\Ocelot\\Ocelot.Admin\\webapi\\src\\OcelotAdmin.Domain\\OcelotAdmin.Domain.csproj",
+        "projectName": "OcelotAdmin.Domain",
+        "projectPath": "E:\\SourceCode\\Ocelot\\Ocelot.Admin\\webapi\\src\\OcelotAdmin.Domain\\OcelotAdmin.Domain.csproj",
+        "packagesPath": "C:\\Users\\zhangxiancheng\\.nuget\\packages\\",
+        "outputPath": "E:\\SourceCode\\Ocelot\\Ocelot.Admin\\webapi\\src\\OcelotAdmin.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "E:\\SourceCode\\Ocelot\\Ocelot.Admin\\webapi\\NuGet.Config",
+          "C:\\Users\\zhangxiancheng\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "http://nuget.forclass.net/nuget": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.myget.org/F/blazorise/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "E:\\SourceCode\\Ocelot\\Ocelot.Admin\\webapi\\src\\OcelotAdmin.Domain.Shared\\OcelotAdmin.Domain.Shared.csproj": {
+                "projectPath": "E:\\SourceCode\\Ocelot\\Ocelot.Admin\\webapi\\src\\OcelotAdmin.Domain.Shared\\OcelotAdmin.Domain.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Ardalis.SmartEnum": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
+            "Volo.Abp.Ddd.Domain": {
+              "target": "Package",
+              "version": "[6.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\OcelotAdmin.HttpApi.Host.props" />
+</Project>

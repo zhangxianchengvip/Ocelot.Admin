@@ -1,0 +1,15 @@
+E:\SourceCode\TestAbp\OcelotAdmin\src\OcelotAdmin.Domain\bin\Debug\net6.0\OcelotAdmin.Domain.deps.json
+E:\SourceCode\TestAbp\OcelotAdmin\src\OcelotAdmin.Domain\bin\Debug\net6.0\OcelotAdmin.Domain.dll
+E:\SourceCode\TestAbp\OcelotAdmin\src\OcelotAdmin.Domain\bin\Debug\net6.0\OcelotAdmin.Domain.pdb
+E:\SourceCode\TestAbp\OcelotAdmin\src\OcelotAdmin.Domain\bin\Debug\net6.0\OcelotAdmin.Domain.Shared.dll
+E:\SourceCode\TestAbp\OcelotAdmin\src\OcelotAdmin.Domain\bin\Debug\net6.0\OcelotAdmin.Domain.Shared.pdb
+E:\SourceCode\TestAbp\OcelotAdmin\src\OcelotAdmin.Domain\obj\Debug\net6.0\OcelotAdmin.Domain.csproj.AssemblyReference.cache
+E:\SourceCode\TestAbp\OcelotAdmin\src\OcelotAdmin.Domain\obj\Debug\net6.0\OcelotAdmin.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\SourceCode\TestAbp\OcelotAdmin\src\OcelotAdmin.Domain\obj\Debug\net6.0\OcelotAdmin.Domain.AssemblyInfoInputs.cache
+E:\SourceCode\TestAbp\OcelotAdmin\src\OcelotAdmin.Domain\obj\Debug\net6.0\OcelotAdmin.Domain.AssemblyInfo.cs
+E:\SourceCode\TestAbp\OcelotAdmin\src\OcelotAdmin.Domain\obj\Debug\net6.0\OcelotAdmin.Domain.csproj.CoreCompileInputs.cache
+E:\SourceCode\TestAbp\OcelotAdmin\src\OcelotAdmin.Domain\obj\Debug\net6.0\OcelotAdmin.Domain.csproj.CopyComplete
+E:\SourceCode\TestAbp\OcelotAdmin\src\OcelotAdmin.Domain\obj\Debug\net6.0\OcelotAdmin.Domain.dll
+E:\SourceCode\TestAbp\OcelotAdmin\src\OcelotAdmin.Domain\obj\Debug\net6.0\refint\OcelotAdmin.Domain.dll
+E:\SourceCode\TestAbp\OcelotAdmin\src\OcelotAdmin.Domain\obj\Debug\net6.0\OcelotAdmin.Domain.pdb
+E:\SourceCode\TestAbp\OcelotAdmin\src\OcelotAdmin.Domain\obj\Debug\net6.0\ref\OcelotAdmin.Domain.dll

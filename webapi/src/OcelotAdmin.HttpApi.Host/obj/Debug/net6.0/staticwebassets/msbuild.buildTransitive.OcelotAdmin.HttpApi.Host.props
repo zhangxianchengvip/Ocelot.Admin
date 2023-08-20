@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\OcelotAdmin.HttpApi.Host.props" />
+</Project>
