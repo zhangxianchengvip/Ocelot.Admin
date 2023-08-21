@@ -1,5 +1,6 @@
 ﻿using OcelotAdmin.Properties.Enums;
 using System;
+using System.Linq.Dynamic.Core.Tokenizer;
 using System.Threading;
 using System.Threading.Tasks;
 using Volo.Abp;
@@ -32,7 +33,8 @@ public class RoleManager : DomainService
     public async Task<Role> AddRoleNameSpace(Guid id, Guid nameSpaceId, Operation operationId)
     {
         var role = await GetRoleIfNotHasThrowException(id);
-        return role;
+        role.AddRoleNamespace(nameSpaceId, operationId);
+        return await _repository.InsertAsync(role);
     }
     private async Task CheckRoleIfAnyThrowException(string name)
     {
