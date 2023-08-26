@@ -21,7 +21,6 @@ public class AuthAppService : ApplicationService, IAuthAppService
 {
     private readonly IRepository<User, Guid> _user;
     private readonly IRepository<Role, Guid> _role;
-    private readonly IUserRepository _userR;
     private readonly JwtOptions _jwt;
 
     public AuthAppService(IRepository<User, Guid> user, IRepository<Role, Guid> role, IOptionsSnapshot<JwtOptions> options)
